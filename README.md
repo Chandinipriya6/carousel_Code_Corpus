@@ -5,12 +5,6 @@ It supports auto-play, pause functionality, and smooth left-to-right sliding ani
 
 ---
 
-## 📌 Live Demo
-*(Optional - add later if you deploy it)*  
-https://your-deployment-link.com
-
----
-
 ## ✨ Features
 
 - 🎡 Horizontal carousel with multiple visible cards
