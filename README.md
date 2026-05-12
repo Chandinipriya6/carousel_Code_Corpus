@@ -1,16 +1,63 @@
-# React + Vite
+# 🎠 Swiggy-Style React Carousel Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and interactive carousel built using **React JS**, inspired by Swiggy/Zomato-style horizontal sliders.  
+It supports auto-play, pause functionality, and smooth left-to-right sliding animations.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Live Demo
+*(Optional - add later if you deploy it)*  
+https://your-deployment-link.com
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🎡 Horizontal carousel with multiple visible cards
+- ▶️ Play / Pause auto sliding functionality
+- ⏱️ Auto slide every 2 seconds
+- ⛔ Stops automatically at the last card (no infinite loop)
+- 🎨 Smooth transition using CSS transform
+- 📱 Clean responsive layout (basic)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- React JS (useState, useEffect)
+- JavaScript (ES6)
+- HTML5
+- CSS (Inline styling)
+
+---
+
+## 🧠 Core Concepts Used
+
+- useState → To track current slide index & play/pause state  
+- useEffect → To handle auto sliding with setInterval  
+- setInterval / clearInterval → For controlling animation timing  
+- CSS transform: translateX → For smooth horizontal movement  
+- Flexbox → To arrange cards in a row  
+
+---
+
+## ⚙️ How It Works
+
+1. Cards are stored in an array of objects  
+2. Displayed in a horizontal row using Flexbox  
+3. `index` state controls visible slide  
+4. On Play, a timer updates index every 2 seconds  
+5. Carousel moves using: transform: translateX(-index * cardWidth);
+
+```js
+# Clone the repository
+git clone https://github.com/Chandinipriya6/carousel_Code_Corpus.git
+
+# Go into project folder
+cd carousel_Code_Corpus
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
